@@ -1,0 +1,87 @@
+[
+  {
+    "page_number": 1,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Introduces LEANN, a low-storage vector index for embedding-based search on personal devices. Highlights storage challenges where indexes can exceed raw data size. Proposes recomputation and graph pruning to achieve less than 5% storage overhead while maintaining accuracy."
+  },
+  {
+    "page_number": 2,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Background on approximate nearest neighbor (ANN) search and graph-based methods like HNSW. Describes storage and computational challenges when deploying on consumer devices, motivating LEANN’s approach."
+  },
+  {
+    "page_number": 3,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Outlines LEANN’s design: recompute embeddings at query time instead of storing them, and prune graph metadata by preserving high-degree nodes. Introduces two-level search and dynamic batching to reduce latency."
+  },
+  {
+    "page_number": 4,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Details two-level search algorithm: uses approximate distances for broad exploration and exact distances for promising candidates, reducing recomputation cost. Employs PQ compression for efficiency."
+  },
+  {
+    "page_number": 5,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Explains dynamic batching: groups nodes until GPU-efficient batch size is reached, improving utilization. Draws parallels to beam search in DiskANN but optimized for GPU recomputation."
+  },
+  {
+    "page_number": 6,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Introduces high-degree preserving graph pruning algorithm. Retains hub nodes while reducing overall edges, significantly cutting metadata size without hurting search quality."
+  },
+  {
+    "page_number": 7,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Evaluation setup: describes dataset (RPJ-Wiki, 76GB), embeddings, hardware (NVIDIA A10, Apple M1), and benchmarks (NQ, TriviaQA, GPQA, HotpotQA). Defines metrics: storage, latency, and accuracy."
+  },
+  {
+    "page_number": 8,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Presents main evaluation results. LEANN reduces storage to <5% of raw data while keeping latency under 2s at 90% recall. Outperforms baselines like DiskANN, HNSW, IVF, and BM25 in storage–latency trade-offs."
+  },
+  {
+    "page_number": 9,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Shows downstream RAG accuracy results. LEANN achieves higher accuracy than BM25 and PQ-compression. On datasets like NQ and TriviaQA, it delivers strong exact match and F1 improvements."
+  },
+  {
+    "page_number": 10,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Ablation study: two-level search speeds up retrieval by ~1.4×; adding batching further improves performance up to 2×. Pruning preserves accuracy better than random pruning or naïve degree reduction."
+  },
+  {
+    "page_number": 11,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Analyzes degree distribution in pruned graphs. LEANN’s pruning retains hub nodes, preserving connectivity and efficiency, unlike heuristic pruning methods that degrade recall."
+  },
+  {
+    "page_number": 12,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Evaluates impact of embedding model size. Smaller models reduce latency with minor accuracy loss. Tests caching strategy: storing embeddings for hub nodes speeds up queries further."
+  },
+  {
+    "page_number": 13,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Breaks down recomputation costs: GPU embedding generation dominates latency (~76%). Suggests overlapping I/O, CPU, and GPU to optimize further. Compares cache hit rates under different disk budgets."
+  },
+  {
+    "page_number": 14,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Related work: reviews IVF, HNSW, DiskANN, and other ANN search methods. Summarizes compression and disk-based strategies, noting their limitations in balancing storage and accuracy on constrained devices."
+  },
+  {
+    "page_number": 15,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Discusses broader applicability of LEANN’s recomputation and pruning techniques. Notes limitation: embeddings must still be computed once for index construction. Suggests storage-efficient build strategies."
+  },
+  {
+    "page_number": 16,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Outlines future directions: faster GPUs and smaller embedding models will reduce latency further. Envisions extending LEANN to datacenter-scale systems to tackle embedding storage burdens."
+  },
+  {
+    "page_number": 17,
+    "file_name": "2506.08276v1.pdf",
+    "summary": "Conclusion: LEANN achieves 50× storage reduction while maintaining accuracy and latency for ANN search on edge devices. Combines recomputation, two-level search, batching, and pruning into a practical system."
+  }
+]
