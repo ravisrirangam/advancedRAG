@@ -8,81 +8,96 @@
   {
     "page_number": 2,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Explains the conflict between prefix locality and fairness. Prefix sharing boosts efficiency but compromises fairness, while fair scheduling reduces efficiency by breaking prefix grouping. Distributed settings add further complexity with load balancing considerations."
+    "summary": "Explains the conflict between prefix locality and fairness. Prefix sharing boosts efficiency but compromises fairness, while fair scheduling reduces efficiency by breaking prefix grouping. Distributed settings add further complexity with load balancing considerations.",
+    "link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 3,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Presents fairness definitions and requirements in LLM serving. Introduces backlog conditions, fairness properties, and service measurement. Highlights the need to account for prefix sharing in fairness-aware cost functions."
+    "summary": "Presents fairness definitions and requirements in LLM serving. Introduces backlog conditions, fairness properties, and service measurement. Highlights the need to account for prefix sharing in fairness-aware cost functions.",
+    "link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 4,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Details the DLPM algorithm design. Combines prefix locality with fairness via a quantum mechanism inspired by deficit round robin. Ensures requests from under-served clients get processed without breaking locality too much."
+    "summary": "Details the DLPM algorithm design. Combines prefix locality with fairness via a quantum mechanism inspired by deficit round robin. Ensures requests from under-served clients get processed without breaking locality too much.",
+    "link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 5,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Provides theoretical fairness guarantees for DLPM. Proves bounded service differences between backlogged clients, and between backlogged and non-backlogged clients. Shows DLPM is work-conserving."
+    "summary": "Provides theoretical fairness guarantees for DLPM. Proves bounded service differences between backlogged clients, and between backlogged and non-backlogged clients. Shows DLPM is work-conserving.",
+    "link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 6,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Extends DLPM to distributed scheduling. Introduces centralized DLPM as a baseline but highlights its overhead issues. Presents decentralized DLPM to reduce synchronization overhead."
+    "summary": "Extends DLPM to distributed scheduling. Introduces centralized DLPM as a baseline but highlights its overhead issues. Presents decentralized DLPM to reduce synchronization overhead.",
+    "link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 7,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Introduces D2LPM, which balances locality, fairness, and load balancing in distributed settings. Uses a quantum-based mechanism to prevent clients from being too tied to one worker. Theoretical fairness bounds are provided."
+    "summary": "Introduces D2LPM, which balances locality, fairness, and load balancing in distributed settings. Uses a quantum-based mechanism to prevent clients from being too tied to one worker. Theoretical fairness bounds are provided.",
+    "link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 8,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Begins evaluation section. Describes implementation setup, models used (Llama family), hardware (A100, A10G), and workloads such as Long-Context QA, Tree-of-Thoughts, LLM-as-a-Judge, and multi-turn chat."
+    "summary": "Begins evaluation section. Describes implementation setup, models used (Llama family), hardware (A100, A10G), and workloads such as Long-Context QA, Tree-of-Thoughts, LLM-as-a-Judge, and multi-turn chat.",
+    "link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 9,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Describes experimental workloads and baselines. Misbehaving client scenarios are simulated. Compares DLPM/D2LPM against Preble, RR+LPM, and VTC using throughput, fairness, and latency metrics."
+    "summary": "Describes experimental workloads and baselines. Misbehaving client scenarios are simulated. Compares DLPM/D2LPM against Preble, RR+LPM, and VTC using throughput, fairness, and latency metrics.",
+    "link": "https://arxiv.org/abs/2501.14312v1"
   },
-  {
-    "page_number": 10,
+  {    "page_number": 10,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Presents results on synthetic traces. D2LPM achieves higher throughput than VTC and maintains fairness better than Preble or RR+LPM. Shows trade-offs between locality, fairness, and latency."
+    "summary": "Presents results on synthetic traces. D2LPM achieves higher throughput than VTC and maintains fairness better than Preble or RR+LPM. Shows trade-offs between locality, fairness, and latency.",
+    "link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 11,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Continues results analysis. D2LPM reduces latency for well-behaved clients while protecting against misbehaving clients. It maintains a balance between throughput and fairness."
+    "summary": "Continues results analysis. D2LPM reduces latency for well-behaved clients while protecting against misbehaving clients. It maintains a balance between throughput and fairness.",
+"link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 12,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Real-world trace experiments from Chatbot Arena are analyzed. D2LPM provides low response times and fairness for both well-behaved and previously misbehaving clients, unlike VTC or locality-only schedulers."
+    "summary": "Real-world trace experiments from Chatbot Arena are analyzed. D2LPM provides low response times and fairness for both well-behaved and previously misbehaving clients, unlike VTC or locality-only schedulers.",
+"link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 13,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Ablation studies demonstrate fairness properties and visualize response times. D2LPM achieves faster completion times and avoids starvation issues seen in other algorithms like Preble."
+    "summary": "Ablation studies demonstrate fairness properties and visualize response times. D2LPM achieves faster completion times and avoids starvation issues seen in other algorithms like Preble.",
+"link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 14,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Examines impact of quantum parameters (Qu, Qw) on trade-offs between locality and fairness. Shows how tuning allows better throughput while preserving fairness."
+    "summary": "Examines impact of quantum parameters (Qu, Qw) on trade-offs between locality and fairness. Shows how tuning allows better throughput while preserving fairness.",
+"link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 15,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Scalability analysis with varying number of clients. DLPM scales well and achieves near-LPM throughput while maintaining fairness. VTC remains less efficient."
+    "summary": "Scalability analysis with varying number of clients. DLPM scales well and achieves near-LPM throughput while maintaining fairness. VTC remains less efficient.",
+"link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 16,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Explores mixed workloads. DLPM provides better execution time than LPM, while still preserving fairness. Demonstrates robustness across workload diversity."
+    "summary": "Explores mixed workloads. DLPM provides better execution time than LPM, while still preserving fairness. Demonstrates robustness across workload diversity.",
+"link": "https://arxiv.org/abs/2501.14312v1"
   },
   {
     "page_number": 17,
     "file_name": "2501.14312v1.pdf",
-    "summary": "Related work, limitations, and conclusion. Paper situates contributions relative to ML fairness, scheduling, and locality-aware inference. Highlights DLPM and D2LPM as first prefix-aware fair scheduling algorithms for LLM serving."
+    "summary": "Related work, limitations, and conclusion. Paper situates contributions relative to ML fairness, scheduling, and locality-aware inference. Highlights DLPM and D2LPM as first prefix-aware fair scheduling algorithms for LLM serving.",
+"link": "https://arxiv.org/abs/2501.14312v1"
   }
 ]
